@@ -1,13 +1,19 @@
-*{
-  background-color: #fdf5e6;
-}
-body{
-  width: 800px;
-  box-sizing: border-box;
-  margin: auto;
-  /* font-family: sans-serif; */
+/* App.css */
+.app-container {
+  display: flex;
+  position: relative;
 }
 
-body h1{
-  /* font-family: serif; */
+.main-content {
+  flex: 1;
+  margin-right: 300px; /* Make space for fixed sidebar */
+}
+
+.sidebar-fixed {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 280px;
+  z-index: 1000;
 }

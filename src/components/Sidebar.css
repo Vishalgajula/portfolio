@@ -1,10 +1,81 @@
-.sidebar-container{
-  padding: 3rem;
-  border-bottom: 2px solid #ddd;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-
+.sidebar-container {
+  height: 100vh;
+  padding: 2rem 1.5rem;
+  background: #f8f6f0;
+  border-left: 2px solid #000;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  font-family: "Times New Roman", serif;
+  overflow-y: auto;
 }
 
-ul{
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #000;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  color: #222;
+}
+
+.sidebar-nav {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 0.5rem;
+}
+
+.nav-button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0.8rem 1rem;
+  font-family: "Times New Roman", serif;
+  font-size: 0.95rem;
+  color: #444;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-button:hover {
+  background: #e8e4d8;
+  color: #222;
+  transform: translateX(5px);
+}
+
+.nav-button.active {
+  background: #222;
+  color: #fdfbf7;
+  font-weight: bold;
+}
+
+.nav-button.active::before {
+  content: "▶";
+  position: absolute;
+  left: -10px;
+  font-size: 0.8rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sidebar-container {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    width: 280px;
+    transition: right 0.3s ease;
+    z-index: 1001;
+  }
+  
+  .sidebar-container.open {
+    right: 0;
+  }
+  
+  /* You might want to add a mobile menu button */
 }

@@ -4,12 +4,15 @@ import Home from './components/Home'
 import Sidebar from './components/Sidebar';
 
 function App() {
-
   return (
-    <>
-      <Sidebar />
-      <Home />
-    </>
+    <div className="app-container">
+      <main className="main-content">
+        <Home />
+      </main>
+      <aside className="sidebar-fixed">
+        <Sidebar />
+      </aside>
+    </div>
   )
 }
 
