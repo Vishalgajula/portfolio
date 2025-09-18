@@ -1,0 +1,13 @@
+*{
+  background-color: #fdf5e6;
+}
+body{
+  width: 800px;
+  box-sizing: border-box;
+  margin: auto;
+  /* font-family: sans-serif; */
+}
+
+body h1{
+  /* font-family: serif; */
+}

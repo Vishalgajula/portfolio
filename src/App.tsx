@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import './App.css'
-// import Home from './components/Home'
+import Home from './components/Home'
+import Sidebar from './components/Sidebar';
 
 function App() {
 
   return (
     <>
-      <h1>Home page</h1>
-      {/* <Home /> */}
+      <Sidebar />
+      <Home />
     </>
   )
 }

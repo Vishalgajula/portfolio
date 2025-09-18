@@ -1,0 +1,10 @@
+.sidebar-container{
+  padding: 3rem;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+ul{
+  list-style: none;
+}

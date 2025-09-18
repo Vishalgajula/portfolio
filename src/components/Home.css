@@ -1,0 +1,65 @@
+
+.portfolio-container {
+  font-family: "Times New Roman", serif;
+  background: #fdfbf7; /* newspaper paper tone */
+  color: #222;
+}
+.title{
+  border-bottom: 2px solid #000;
+}
+
+.hero-section{
+  display: flex;
+  align-items:center;
+  align-content: space-between;
+  gap: 50px;
+}
+
+.hero img{
+  width: 300px;
+}
+.page {
+  /* min-height: 80vh; */
+  padding: 3rem;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.about p{
+  column-count: 2;
+  column-width: auto;
+}
+
+.headline {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.subheadline {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.byline {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.section-title {
+  font-size: 2rem;
+  border-bottom: 2px solid #000;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+/* Modern touch */
+a {
+  color: teal;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
