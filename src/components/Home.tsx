@@ -6,8 +6,11 @@ const Home: React.FC = () => {
   return (
     <div className="portfolio-container">
       {/* Hero / Front Page */}
-      <section className="page hero">
-        <h1 className="title">The Developer Times - <i>Special Edition</i></h1>
+        <section className="title-section">
+          <h1 className="title">The Developer Times - <i>Special Edition</i></h1>
+        </section>
+        {/* hero section */}
+      <section className="page hero" id="main">
         <div className="hero-section">
           <img src={profile} alt="" />
           <p>“Meet Vishal Gajula, an aspiring Full Stack Developer from Karimnagar. Skilled in both front and back pages of tech—React, Angular, Java, Spring Boot, and PostgreSQL—he turns ideas into scalable web stories. A problem-solver, a quick learner, and always chasing the next big headline in code.”</p>
@@ -15,7 +18,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* About Me */}
-      <section className="page about">
+      <section className="page about" id="about">
         <h2 className="section-title">Letter from the Editor</h2>
         <p>
           “Dear Reader, technology is today’s breaking news—ever-changing and full of impact. My journey began with curiosity and grew into a passion for crafting clean, purposeful applications. Every project is not just about code—it’s about stories that improve experiences. Thank you for reading. Let’s turn the page together.”
@@ -23,7 +26,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Projects */}
-      <section className="page projects">
+      <section className="page projects" id="projects">
         <h2 className="section-title">Featured Stories of Code</h2>
         <article>
           <h3>Movie Finder (React)</h3>
@@ -40,7 +43,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Skills */}
-      <section className="page skills">
+      <section className="page skills" id="skills">
         <h2 className="section-title">Classifieds – Tools of the Trade</h2>
         <ul>
           <li><strong>Front Page Ads:</strong> HTML5 | CSS3 | JavaScript | TypeScript</li>
@@ -53,7 +56,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Internship */}
-      <section className="page experience">
+      <section className="page experience" id="experience">
         <h2 className="section-title">Career Chronicles – Past Issues</h2>
         <p>
           “Nov 2024 – Apr 2025: Apprentice at tech.at.core. Covered full-stack beats with React, Angular, Spring Boot, and PostgreSQL. Reported daily in Agile sprints, contributed to code reviews, and learned the art of clean, maintainable development. A valuable edition in my developer journey.”
@@ -63,7 +66,7 @@ const Home: React.FC = () => {
 
 
       {/* Education */}
-      <section className="page education">
+      <section className="page education" id="education">
         <h2 className="section-title">Education Bulletin – Academic Announcements</h2>
         <ul>
           <li>
@@ -88,7 +91,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Contact */}
-      <section className="page contact">
+      <section className="page contact" id="contact">
         <h2 className="section-title">Cut Out & Save – Hire Me!</h2>
         <p>
           “Looking for a developer to headline your next project? Redeem this exclusive Hire Me coupon today. Click below to connect!”
