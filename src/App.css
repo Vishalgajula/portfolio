@@ -1,26 +1,37 @@
-*{
-  /* background-color: #fdf5e6; */
-  background: #fdfbf7; /* newspaper paper tone */
-  scroll-behavior: smooth;
-}
-
+/* App.css */
 html, body, #root {
   height: 100%;
-  margin: 0; /* Remove default margin */
-  
+  margin: 0;
+  overflow: hidden; 
 }
 
-#root > div { 
-  height: 100%;
-}
-
-body{
-  /* max-width: 1400px; */
-  box-sizing: border-box;
-  margin: auto;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-}
-.main-contianer{
+.app-container {
   height: 100vh;
+  width: 100vw;
+  background-color: #fdfbf7;
+}
+
+
+.main-container {
+  height: 100%; 
+  width: 100%;
+}
+
+
+.mobile-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.resize-handle {
+  background-color: #ccc;
+  width: 4px;
+  cursor: col-resize;
+  transition: background-color 0.2s;
+}
+.resize-handle:hover {
+  background-color: teal;
 }

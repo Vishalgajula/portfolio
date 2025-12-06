@@ -3,12 +3,21 @@ import "./Home.css"; // for newspaper styles
 import profile from "../assets/profile-pic.jpg";
 
 const Home: React.FC = () => {
+
+  //todays date in long format
+    const today = new Date();
+    const options: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'long', year: 'numeric' };
+    const longDate = today.toLocaleDateString('en-IN', options);
+
   return (
     <div className="portfolio-container">
+
       {/* Hero / Front Page */}
         <section className="title-section">
           <h1 className="title">The Developer Times - <i>Special Edition</i></h1>
+          <span className="date">{longDate}</span>
         </section>
+
         {/* hero section */}
       <section className="page hero" id="main">
         <div className="hero-section">
@@ -92,9 +101,9 @@ const Home: React.FC = () => {
 
       {/* Contact */}
       <section className="page contact" id="contact">
-        <h2 className="section-title">Cut Out & Save – Hire Me!</h2>
+        <h2 className="section-title">Cut Out & Save – Contact Me!</h2>
         <p>
-          “Looking for a developer to headline your next project? Redeem this exclusive Hire Me coupon today. Click below to connect!”
+          “Looking for a developer to headline your next project? Redeem this exclusive Contact Me coupon today. contact me on LinkedIn”
         </p>
       </section>
     </div>
