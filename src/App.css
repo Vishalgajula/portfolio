@@ -1,0 +1,26 @@
+*{
+  /* background-color: #fdf5e6; */
+  background: #fdfbf7; /* newspaper paper tone */
+  scroll-behavior: smooth;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0; /* Remove default margin */
+  
+}
+
+#root > div { 
+  height: 100%;
+}
+
+body{
+  /* max-width: 1400px; */
+  box-sizing: border-box;
+  margin: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+.main-contianer{
+  height: 100vh;
+}
